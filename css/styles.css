@@ -8,6 +8,7 @@
     --color-primary: #4D41C0;   /*variavel cor cabeçalho*/
     --white: #FFFFFF;             /*variavel cor letra*/
     --text-light-gray: #AAA;
+    --star-yellow: #FFBB3A;
 }
 
 * {    /* seletor global: pega todos os elementos da pagina*/
@@ -84,7 +85,7 @@ a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
     justify-content: space-between;
     background-color: var(--white);
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3 {
@@ -92,7 +93,31 @@ a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
     font-weight: 700;
     margin-bottom: 25px;
     text-align: center;
+    padding: 10px;
 }
+
+.dsmovie-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-bottom img {
+    width: 22px;
+}
+
+.dsmovie-card-description-bottom h4 {
+    font-size: 16px;
+    color: var(--star-yellow);
+    font-weight: 700;
+}
+
+.dsmovie-card-description-bottom p {
+    font-size: 12px;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
 
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
@@ -119,7 +144,7 @@ a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
 
 
 .dsmovie-form {
-    width: 100%
+    width: 100%;
 }
 
 .dsmovie-form-group {
