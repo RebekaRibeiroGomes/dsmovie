@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+
+
+:root{        /*colocar variaveis*/
+    --bg-gray: #ddd;  /*variavel fundo cinza*/
+    --color-primary: #4D41C0;   /*variavel cor cabeçalho*/
+    --white: #FFFFFF              /*variavel cor letra*/
+}
 * {    /* seletor global: pega todos os elementos da pagina*/
     box-sizing: border-box;  /*pra que a borda dos elementos não ocupe area*/
     font-family:  'Open Sans', sans-serif;  /*fonte escolhida*/
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;     /*especificar a margem dos h1[...] pq o BootStrap tava sobrescrevendo uma margem pra eles*/
+}
+
 html, body {
-    background-color: #ddd;   /*cor do fundo*/
+    background-color: var(--bg-gray);   /*variavel da cor do fundocor do fundo*/
 }
 
 header {
-    background-color: #4D41C0 ;  /*cor do cabeçalho*/
-    color: #FFFFFF;              /*cor dos itens da frente do cabeçalho*/
-
-
+    background-color: var(--color-primary);  /*cor do cabeçalho*/
+    color: var(--white);              /*cor dos itens da frente do cabeçalho*/
+    height: 60px;                  /*altura do cabeçalho*/
+    display: flex;                /*dizer que o cabeçalho tem q estar alinhado*/
+    align-items: center;           /*alinhar os itens do cabeçalho para o centro*/
 }
 
 nav {
@@ -22,8 +34,27 @@ nav {
     justify-content: space-between;    /*alinhar ambos com espaço entre eles*/
 }
 
+
+nav h1 {       /*tratar do h1 q tá dentro do nav*/
+    font-size: 24px;           /*tamanho da fonte do heading 1 do nav*/
+    font-weight: 700;          /*grossura da fonte do heading 1 do nav (no caso aqui, negrito)*/
+}
+
+nav a {      /*tratar do link (a) que ta dentro do nav*/
+    font-size: 12px;
+    font-weight: 400;
+}
 a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
     text-decoration: none;   /*sem decorações no texto (nesse caso, o sublinhado)*/
     color: unset;     /* n botar cor pre definida no link*/
 
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
 }
