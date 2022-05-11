@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 * {    /* seletor global: pega todos os elementos da pagina*/
-    font-family:  'Open Sans', sans-serif;
+    box-sizing: border-box;  /*pra que a borda dos elementos não ocupe area*/
+    font-family:  'Open Sans', sans-serif;  /*fonte escolhida*/
+}
+
+html, body {
+    background-color: #ddd;   /*cor do fundo*/
+}
+
+header {
+    background-color: #4D41C0 ;  /*cor do cabeçalho*/
+    color: #FFFFFF;              /*cor dos itens da frente do cabeçalho*/
+
+
+}
+
+nav {
+    display: flex;   /*alinhar o conteudo da barra de navegação*/
+    align-items: center;    /*alinhar para o centro*/
+    justify-content: space-between;    /*alinhar ambos com espaço entre eles*/
+}
+
+a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
+    text-decoration: none;   /*sem decorações no texto (nesse caso, o sublinhado)*/
+    color: unset;     /* n botar cor pre definida no link*/
+
 }
