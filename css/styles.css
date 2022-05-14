@@ -68,7 +68,7 @@ a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
 }
 
 #dsmovie-card-list {    /*pq para id se coloca hashtag*/
-    padding: 40px 0;    /*espaçamento interno*/
+    padding: 0 10px;    /*espaçamento interno*/
 }
 
 
@@ -178,4 +178,37 @@ a, a:hover {    /*:hover é qnd passar o mouse em cima do link*/
     font-size: 20px;    
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+}
+
+.dsmovie-pagination-box button:disabled {    /*estilizar o botão qnd ele estiver desabilitado*/
+    border: 1px solid var(--text-light-gray);
+    background-color: var(--white);
 }
